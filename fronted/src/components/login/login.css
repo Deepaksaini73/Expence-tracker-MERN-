@@ -1,0 +1,56 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #342f2f;
+}
+.login-form {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background: wheat;
+    padding: 12px 30px;
+}
+.login-form .box input{
+    width: 90%;
+    border: 1px solid black;
+    outline: 0;
+    padding: 5px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+.login-form .box input:focus{
+    border:3px solid red;
+}
+.login-form .option-field{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.login-form .option-field .frg-btn{
+    outline: 0;
+    border: 0;
+    background: transparent;
+    color: blue;
+}
+.login-form .option-field .frg-btn:hover,.login-form .sign-info .sign-btn:hover{
+    text-decoration: underline;
+}
+
+.login-form .login-btn{
+    padding: 12px 24px;
+    background: blue;
+    color: whitesmoke;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.login-form .login-btn:hover{
+    box-shadow: 5px 5px rgba(0,0,0,0.2),-5px -5px rgba(0,0,0,0.2);
+}
+.login-form .sign-info .sign-btn{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: blue;
+}

@@ -1,9 +1,14 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Login from './components/login/Login';
+import Signup from './components/signup/Signup';
 
 function App() {
   return (
-    <h1>Start</h1>
+    <>
+      <Login/>
+      <Signup/>
+    </>
   );
 }
 
