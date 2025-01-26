@@ -24,7 +24,8 @@ const login =async (req,resp)=>{
     try {
         const {email,password} = req.body;
         const user = await UserModel.findOne({email})
-        const errMsg = "username or password is wrong"
+        const errMsg = "eamil or password is wrong";
+        const name = user.name;
 
         if(!user) {
             return resp.status(400).json({message: errMsg ,success : false})
@@ -41,7 +42,7 @@ const login =async (req,resp)=>{
             {expiresIn:'24h'}
         )
        
-        resp.status(201).json({message:"login sucessfully" , success : true, jwtToken, email})
+        resp.status(201).json({message:"login sucessfully" , success : true,name, jwtToken, email})
         
     } catch (error) {
         resp.status(500).json({message:"internal server error" , success : false})
